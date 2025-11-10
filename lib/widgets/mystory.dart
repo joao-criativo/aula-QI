@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class MyStory extends StatelessWidget {
-  final String? tittle = "Perfil";
+  final String title;
 
-  const MyStory({super.key, required Title});
+  const MyStory({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +13,10 @@ class MyStory extends StatelessWidget {
         CircleAvatar(
           radius: 25,
           backgroundColor: Colors.black,
-          child: FlutterLogo(size: 60),
+          child: Image.network("https://i.ytimg.com/vi/AfRwqvc6wCU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCQSrvJBvC7CecghzNnA6K3BEO7DQ"),
         ),
-        Text(title!)
+        Text(title)
       ],
     );
   }
 }
-hyper.raio.krein.123
